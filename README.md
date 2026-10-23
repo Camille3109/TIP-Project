@@ -8,5 +8,5 @@ Activer Unlock Layer et modifier :
   NumFilters = 11  
   WeightLearnRateFactor = 10  
   BiasLearnRateFactor = 10  
-Exporter  
+Exporter sous le nom "network_ajoute"  
 Executer CNN 
