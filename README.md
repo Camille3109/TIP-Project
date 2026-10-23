@@ -1,6 +1,6 @@
 # TIP-Project
 
-Executer prepare_data à chaque ouverture de Matlab  
+Executer food11_database à chaque ouverture de Matlab  
 Ouvrir Deep Network Designer  
 Ouvrir SqeezeNet  
 dans le bloque conv10  
