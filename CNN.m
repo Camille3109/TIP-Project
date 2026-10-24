@@ -1,5 +1,7 @@
 close all
 
+deepNetworkDesigner
+
 %% 2. Séparation de imdsTrain en Train (80%) et Validation (20%)
 [imdsTrainSplit, imdsValSplit] = splitEachLabel(imdsTrain, 0.8, 'randomized');
 
@@ -9,6 +11,7 @@ inputSize = network_ajoute.Layers(1).InputSize; % Ex: [224 224 3]
 %% 4. Création des datastores augmentés avec redimensionnement automatique
 audsTrain = augmentedImageDatastore(inputSize(1:2), imdsTrainSplit);
 audsVal   = augmentedImageDatastore(inputSize(1:2), imdsValSplit);
+audsTest = augmentedImageDatastore(inputSize(1:2), imdsTest);
 
 %% 5. Configuration des options d'entraînement
 miniBatchSize = 32;
