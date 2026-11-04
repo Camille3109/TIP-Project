@@ -1,7 +1,7 @@
 function [imdsTrain, imdsTest] = prepare_data()
 
     %% Configuration des chemins d'accès
-    rootDir = 'food-11';
+    rootDir = '../food-11';
     trainDir = fullfile(rootDir, 'train');
     testDir = fullfile(rootDir, 'test');
     
